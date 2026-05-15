@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /preview.html
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /preview.html
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /preview.html
+
+User-agent: GPTBot
+Allow: /
+Disallow: /preview.html
+
+Sitemap: https://www.fsconstructionseptic.com/sitemap.xml

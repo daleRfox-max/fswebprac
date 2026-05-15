@@ -1,12 +1,12 @@
-# CLAUDE.md - Frontend Website Rules
+# AGENTS.md - Frontend Website Rules
 
 ## Always Do First
 - **Invoke the `frontend-design` skill** before writing any frontend code, every session, no exceptions.
 
 ## Reference Images
-- If a reference image is provided: match layout, spacing, typography, and color exactly. Swap in placeholder content only where real content/assets are not provided. Do not improve or add to the design.
-- If no reference image: design from scratch with high craft and match the brand assets available in the repo.
-- Screenshot your output, compare against the reference or current design intent, fix mismatches, and re-screenshot. Do at least 2 comparison rounds when visual changes are made.
+- If a reference image is provided: match layout, spacing, typography, and color exactly. Use real content/assets where available and placeholders only where needed.
+- If no reference image: design from scratch with high craft and use the brand/project assets in the repo.
+- Screenshot output from localhost, compare, fix mismatches, and re-screenshot. Do at least 2 rounds when visual changes are made.
 
 ## Local Server
 - **Always serve on localhost** - never screenshot a `file:///` URL.
@@ -15,20 +15,20 @@
 
 ## Screenshot Workflow
 - **Always screenshot from localhost:** `node screenshot.mjs http://localhost:3000`
-- Screenshots are saved automatically to `./temporary screenshots/screenshot-N.png` and never overwritten.
+- Screenshots are saved automatically to `./temporary screenshots/screenshot-N.png`.
 - Optional label suffix: `node screenshot.mjs http://localhost:3000 label` -> saves as `screenshot-N-label.png`.
 - After screenshotting, inspect the PNG from `temporary screenshots/`.
 - Check spacing, padding, font size, weight, line height, colors, alignment, border radius, shadows, image sizing, and mobile layout.
 
 ## Output Defaults
-- This project is no longer a landing-page-only build. Use a multi-page static site when it improves search traffic, service clarity, internal linking, and local SEO.
+- This project is no longer landing-page-only. Use a multi-page static site when it improves search traffic, service clarity, internal linking, and local SEO.
 - Keep shared styling in `site.css` and shared behavior in `main.js` unless the user requests a single-file prototype.
 - Use real local brand/project images before placeholders.
 - Keep pages mobile-first, fast, crawlable, and useful as standalone search results.
 - Use unique page titles, unique meta descriptions, canonical URLs, sitemap entries, descriptive image alt text, and structured data where it matches visible page content.
 
 ## Brand Assets
-- Always check the project assets before designing. Use the logo and real project photos when available.
+- Always check project assets before designing. Use the logo and real project photos when available.
 - If a color palette is defined, use those exact values. Do not invent unrelated brand colors.
 
 ## Anti-Generic Guardrails
